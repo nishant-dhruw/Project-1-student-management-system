@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+<h2>Add Student</h2>
+
+<form id="studentForm">
+  <label>Name</label>
+  <input type="text" required>
+
+  <label>Age</label>
+  <input type="number" required>
+
+  <label>Email</label>
+  <input type="email" required>
+
+  <label>Course</label>
+  <input type="text" required>
+
+  <button class="btn" type="submit">Save Student</button>
+</form>
+
+<a class="btn" href="index.html">Back Home</a>
+</div>
+
+<script>
+// temporary - just message (later will send to backend)
+document.getElementById("studentForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Student saved (frontend only right now). Backend coming soon 🙂");
+});
+</script>
+
+</body>
+</html>

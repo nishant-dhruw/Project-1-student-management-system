@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Marks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Add Marks</h2>
+  <button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</div>
+
+<div class="container">
+
+<h2>Enter Marks</h2>
+
+<form onsubmit="validateForm(event)">
+
+<label>Student Name</label>
+<input type="text" required>
+
+<label>Subject</label>
+<input type="text" required>
+
+<label>Marks</label>
+<input type="number" required>
+
+<button class="btn" type="submit">Save</button>
+
+</form>
+
+<br>
+<a class="btn" href="teacher-dashboard.html">⬅ Back</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

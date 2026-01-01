@@ -1,0 +1,426 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background */
+body{
+  background:linear-gradient(135deg,#5b86e5,#36d1dc);
+  min-height:100vh;
+  background-attachment: fixed;
+}
+
+/* Navbar */
+.navbar{
+  background:rgba(255,255,255,.9);
+  padding:15px 25px;
+  backdrop-filter: blur(6px);
+  box-shadow:0 4px 18px rgba(0,0,0,.15);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.navbar h2{
+  color:#111;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+.navbar a{
+  text-decoration:none;
+  margin-left:15px;
+  color:#0066ff;
+  font-weight:700;
+  transition:.2s;
+}
+
+.navbar a:hover{
+  color:#ff3b30;
+}
+
+/* Main card container */
+.container{
+  width:92%;
+  max-width:900px;
+  margin:40px auto;
+  background:rgba(255,255,255,.95);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 10px 35px rgba(0,0,0,.2);
+  animation:fadeIn .35s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+/* Entry animation */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Headings */
+h1,h2{
+  text-align:center;
+  margin-bottom:25px;
+  color:#111;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  margin:8px 6px;
+  border-radius:10px;
+  border:none;
+  text-decoration:none;
+  background:#0066ff;
+  color:white;
+  cursor:pointer;
+  font-weight:700;
+  letter-spacing:.3px;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:0 8px 26px rgba(0,0,0,.25);
+}
+
+.btn.red{
+  background:#ff3b30;
+}
+
+.btn.green{
+  background:#28c76f;
+}
+
+/* Inputs */
+input,select{
+  width:100%;
+  padding:12px;
+  margin:10px 0 18px 0;
+  border-radius:10px;
+  border:1.6px solid #ccc;
+  transition:.2s;
+  font-size:15px;
+}
+
+input:focus{
+  border-color:#0066ff;
+  outline:none;
+  box-shadow:0 0 8px rgba(0,102,255,.35);
+}
+
+label{
+  font-weight:700;
+  color:#222;
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:15px;
+  overflow:hidden;
+  border-radius:12px;
+}
+
+th{
+  background:#0066ff;
+  color:white;
+  position:sticky;
+  top:0;
+}
+
+th,td{
+  padding:14px;
+  text-align:left;
+}
+
+tr:nth-child(even){
+  background:#f6f9ff;
+}
+
+tr:hover{
+  background:#e7efff;
+  transition:.2s;
+}
+
+/* Checkbox scaling */
+td input[type="checkbox"]{
+  transform:scale(1.2);
+}
+
+/* Responsive */
+@media(max-width:700px){
+
+  .container{
+    width:95%;
+    padding:20px;
+  }
+
+  table{
+    font-size:14px;
+  }
+
+  .navbar h2{
+    font-size:18px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background */
+body{
+  background:linear-gradient(135deg,#5b86e5,#36d1dc);
+  min-height:100vh;
+  background-attachment: fixed;
+}
+
+/* Navbar */
+.navbar{
+  background:rgba(255,255,255,.9);
+  padding:15px 25px;
+  backdrop-filter: blur(6px);
+  box-shadow:0 4px 18px rgba(0,0,0,.15);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.navbar h2{
+  color:#111;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+.navbar a{
+  text-decoration:none;
+  margin-left:15px;
+  color:#0066ff;
+  font-weight:700;
+  transition:.2s;
+}
+
+.navbar a:hover{
+  color:#ff3b30;
+}
+
+/* Main card container */
+.container{
+  width:92%;
+  max-width:900px;
+  margin:40px auto;
+  background:rgba(255,255,255,.95);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 10px 35px rgba(0,0,0,.2);
+  animation:fadeIn .35s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+/* Entry animation */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Headings */
+h1,h2{
+  text-align:center;
+  margin-bottom:25px;
+  color:#111;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  margin:8px 6px;
+  border-radius:10px;
+  border:none;
+  text-decoration:none;
+  background:#0066ff;
+  color:white;
+  cursor:pointer;
+  font-weight:700;
+  letter-spacing:.3px;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:0 8px 26px rgba(0,0,0,.25);
+}
+
+.btn.red{
+  background:#ff3b30;
+}
+
+.btn.green{
+  background:#28c76f;
+}
+
+/* Inputs */
+input,select{
+  width:100%;
+  padding:12px;
+  margin:10px 0 18px 0;
+  border-radius:10px;
+  border:1.6px solid #ccc;
+  transition:.2s;
+  font-size:15px;
+}
+
+input:focus{
+  border-color:#0066ff;
+  outline:none;
+  box-shadow:0 0 8px rgba(0,102,255,.35);
+}
+
+label{
+  font-weight:700;
+  color:#222;
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:15px;
+  overflow:hidden;
+  border-radius:12px;
+}
+
+th{
+  background:#0066ff;
+  color:white;
+  position:sticky;
+  top:0;
+}
+
+th,td{
+  padding:14px;
+  text-align:left;
+}
+
+tr:nth-child(even){
+  background:#f6f9ff;
+}
+
+tr:hover{
+  background:#e7efff;
+  transition:.2s;
+}
+
+/* Checkbox scaling */
+td input[type="checkbox"]{
+  transform:scale(1.2);
+}
+
+/* DARK MODE */
+body.dark{
+  background:#0e1117;
+}
+
+body.dark .container{
+  background:#111827;
+  color:white;
+}
+
+body.dark .navbar{
+  background:#020617;
+  color:white;
+}
+
+body.dark table{
+  color:white;
+}
+
+body.dark th{
+  background:#1f3cff;
+}
+
+body.dark .btn{
+  background:#1f3cff;
+}
+
+body.dark input{
+  background:#020617;
+  color:white;
+  border:1px solid #444;
+}
+
+/* Responsive */
+@media(max-width:700px){
+
+  .container{
+    width:95%;
+    padding:20px;
+  }
+
+  table{
+    font-size:14px;
+  }
+
+  .navbar h2{
+    font-size:18px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
+
+/* DARK MODE */
+body.dark{
+  background: #0e1117;
+}
+
+body.dark .container{
+  background:#111827;
+  color:white;
+}
+
+body.dark .navbar{
+  background:#020617;
+  color:white;
+}
+
+body.dark table{
+  color:white;
+}
+
+body.dark th{
+  background:#1f3cff;
+}
+
+body.dark .btn{
+  background:#1f3cff;
+}
+
+body.dark input{
+  background:#020617;
+  color:white;
+  border:1px solid #444;
+}

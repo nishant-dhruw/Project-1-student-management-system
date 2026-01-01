@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manage Teachers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Manage Teachers</h2>
+  <button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</div>
+
+<div class="container">
+
+<h2>Teachers List</h2>
+
+<input id="searchInput" placeholder="Search teachers..." onkeyup="searchTable()">
+
+<button class="btn">Add Teacher</button>
+
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Subject</th>
+  <th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+  <td>1</td>
+  <td>Komal</td>
+  <td>Maths</td>
+  <td>
+    <button class="btn">Edit</button>
+    <button class="btn red" onclick="return confirmDelete()">Delete</button>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<a class="btn" href="admin-dashboard.html">⬅ Back</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
