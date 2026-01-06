@@ -17,3 +17,4 @@ Future work:
 - Java backend
 - MySQL database
 - Admin, Teacher, Student roles
+- also make this as an app
